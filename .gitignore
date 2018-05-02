@@ -1,0 +1,51 @@
+# Packages           #
+######################
+*.7z
+*.dmg
+*.gz
+*.iso
+*.rar
+*.tar
+*.zip
+
+# Logs               #
+######################
+*.log
+/Debug
+
+# OS generated files #
+######################
+Icon?
+ehthumbs.db
+Thumbs.db
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.bak
+
+# Python specific    #
+######################
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info
+
+
+# IDE specific  #
+###############################
+.project
+.pydevproject
+/.git
+/.settings
+.idea/*
+!/.idea/inspectionProfiles/
+.idea/inspectionProfiles/profiles_settings.xml
+.idea/inspectionProfiles/Project_Default.xml
+libspecs/
+red.xml
+log.html
+output.xml
+report.html

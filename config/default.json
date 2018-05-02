@@ -1,0 +1,34 @@
+{
+  "project": {
+    "browser": "ie",
+    "threads": 1,
+    "condition_log_level": "info",
+    "cli_logs_path": [""],
+    "wait_timeout": 120
+  },
+  "browsers": {
+    "ie": {
+      "use_grid": false,
+      "version": "11",
+      "dc_name": "internet explorer"
+    },
+    "chrome": {
+    },
+    "firefox": {
+      "use_grid": true
+    },
+    "defaults": {
+      "driver_path": "web_drivers",
+      "use_grid": false,
+      "grid_url": "http://localhost:4444/wd/hub",
+      "vnc": true,
+      "video": false
+    }
+  },
+  "report_portal":{
+    "UUID": "042e324d-b874-4347-ab40-3afa714b409d",
+    "ENDPOINT": "http://192.168.56.101:8080",
+    "LAUNCH": "launch_name",
+    "PROJECT": "my_first_project"
+  }
+}
