@@ -1,7 +1,7 @@
-from core.entities.elements import TextInput
-from core.entities.locators import ID
-from core.entities.conditions import be, have
-from core.libs.DriverProvider import DriverProvider
+from core_base.entities.elements import TextInput
+from core_base.entities.locators import ID
+from core_base.entities.conditions import be, have
+from core_base.libs.DriverProvider import DriverProvider
 
 
 

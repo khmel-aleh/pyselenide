@@ -12,13 +12,13 @@ ${BROWSER}=  chrome
 
 *** Test Cases ***
 Test1
-    [Tags]    smoke  debug  21
+    [Tags]    smoke  21
     [Timeout]  10min
     Google Search               Suite2. Test1
     Google Check Query Text     Suite1
 
 Test2
-    [Tags]    smoke  debug  22
+    [Tags]    smoke  22
     [Timeout]  10min
     Google Search               Suite2. Test2
     Google Check Query Text     Suite1

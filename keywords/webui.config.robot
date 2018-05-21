@@ -1,17 +1,15 @@
 *** Settings ***
 Library           SeleniumLibrary    run_on_failure=Nothing
-Library           core
-Library           core.loggers
-Library           core.libs.ConfigLoader    WITH NAME  ConfigLoader
-Library           core.libs.DriverProvider  WITH NAME  DriverProvider
-Library           core.utils.utils2robot
+Library           core_base.libs.ConfigLoader    WITH NAME  ConfigLoader
+Library           core_base.libs.DriverProvider  WITH NAME  DriverProvider
+Library           core_base.loggers
+Library           core_base.utils.utils2robot
 
 *** Keywords ***
 WebUI Suite Setup
     Log    "Suite Setup"
     inizialize_driver
     Maximize Browser Window
-    Go To  https://google.com
 
 WebUI Suite Teardown
     Log    WebUI teardown
@@ -23,9 +21,7 @@ Test Teardown
 
 Test Setup
     ${timestamp}=    Get Time    epoch
-    sleep  1
     Set Test Variable    ${TEST_START_TIME}    ${timestamp}
-#    Open browser keyword
 
 Capture screenshot
     [Arguments]    ${prefix}
@@ -34,7 +30,6 @@ Capture screenshot
 
 Attach webui cli logs
     ${cli_path}=    config.get_cli_logs_path
-#    LogSteps.attach_logs_to_robot_from_timestamp    ${TEST_START_TIME}    ${cli_path}
 
 Failed test actions
     [Arguments]    ${test_name}

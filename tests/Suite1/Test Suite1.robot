@@ -15,7 +15,7 @@ Resource          keywords/webui.config.robot
 
 *** Test Cases ***
 Test1
-    [Tags]    smoke  debug  11
+    [Tags]    smoke  11
     [Timeout]  10min
     Google.Search                   Suite1. Test1
     Google.Check Query Text         Suite1
@@ -23,7 +23,7 @@ Test1
     Google.check_browser_url        google.com
 
 Test2
-    [Tags]    smoke  debug  12
+    [Tags]    smoke  12
     [Timeout]  10min
     Google Search               Suite1. Test2
     google_check_browser_title         Google
