@@ -1,6 +1,6 @@
 {
   "project": {
-    "browser": "ie",
+    "browser": "chrome",
     "threads": 1,
     "condition_log_level": "INFO",
     "cli_logs_path": [""],
@@ -19,7 +19,7 @@
       "use_grid": true
     },
     "defaults": {
-      "driver_path": "web_drivers",
+      "driver_path": "infrastructure/web_drivers",
       "use_grid": true,
       "grid_url": "http://192.168.99.101:4444/wd/hub",
       "vnc": true,

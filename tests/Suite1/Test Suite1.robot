@@ -5,8 +5,8 @@ Test Setup        Test Setup
 Test Teardown     Test Teardown
 Force Tags        common
 Default Tags      not_ready
-Library           core.libs.ConfigLoader     suite1.json  WITH NAME  ConfigLoader
-Library           ui.google.page.GooglePage               WITH NAME  Google
+Library           core.libs.ConfigLoader                WITH NAME  ConfigLoader
+Library           ui.google.page.GooglePage             WITH NAME  Google
 Resource          keywords/webui.config.robot
 
 *** Variables ***
